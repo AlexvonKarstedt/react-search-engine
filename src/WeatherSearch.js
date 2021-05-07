@@ -43,7 +43,7 @@ export default function WeatherSearch() {
         <ul>
           <li> Temperature: {Math.round(weather.temperature)}℃</li>
           <li> Description: {weather.description} </li>
-          <li> Wind: {weather.wind} KMs/H </li>
+          <li> Wind: {Math.round(weather.wind)} KMs/H </li>
           <li> Humidity:{weather.humidity}% </li>
           <li>
             <img src={weather.icon} alt={weather.description} />
@@ -58,7 +58,6 @@ export default function WeatherSearch() {
         color="purple"
         height={100}
         width={100}
-        
       />
   }
 }
