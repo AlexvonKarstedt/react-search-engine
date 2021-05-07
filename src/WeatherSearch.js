@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Loader from "react-loader-spinner";
+
 
 export default function WeatherSearch() {
   const [city, setCity] = useState(null);
@@ -53,11 +53,5 @@ export default function WeatherSearch() {
     );
   } else {
     return form;
-    <Loader
-        type="ThreeDots"
-        color="purple"
-        height={100}
-        width={100}
-      />
   }
 }
